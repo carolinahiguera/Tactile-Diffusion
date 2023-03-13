@@ -1,0 +1,18 @@
+obj_model: 021_bleach_cleanser
+dataset_number: 0
+noise: 
+  sig_r: 0  # degrees
+  sig_t: 0e-4  # m
+
+num_samples : 2000
+
+render:
+  pixmm : 0.03
+  width : 240 
+  height : 320
+  cam_dist : 0.022
+  shear_mag : 0.0
+  pen : 
+    min : 0.00
+    max : 0.00
+  randomize : False

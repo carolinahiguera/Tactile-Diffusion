@@ -1,0 +1,17 @@
+name_source_data: tacto_finetune
+root_dir: /media/chiguera/2TB/tacto_diffusion/repo
+dir_bgs: datasets/braille/bgs/
+dir_tactile_imgs: datasets/braille/real_fine_tuning/color/
+dir_tactile_real: datasets/braille/real/color/
+fine_tune: true
+checkpoint: 'clf_tacto.pth'
+p_data_fine_tune: 0.8
+remove_bg_train: true
+batch_size: 20
+img_size: 64
+lr: 0.0001
+model: resnet18
+n_epochs: 20
+
+
+

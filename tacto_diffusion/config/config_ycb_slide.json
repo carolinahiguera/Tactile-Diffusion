@@ -1,0 +1,38 @@
+{
+    "name": "model_ycb_slide",
+    "model": {
+        "unet": {
+            "channel_mults": [1,2,4,8],
+            "attn_res": 32,
+            "num_head_channels": 4,
+            "res_blocks": 4
+        },
+        "beta_schedule": {
+            "train": {
+                "schedule": "linear",
+                "n_timestep":500,
+                "linear_start": 1e-4,
+                "linear_end": 0.02
+            },
+            "test": {
+                "schedule": "linear",
+                "n_timestep": 500,
+                "linear_start": 1e-4,
+                "linear_end": 0.02
+            }
+        },
+        "lr":1e-4,
+        "epochs":10,
+        "freq_loss":50,
+        "freq_metrics":150,
+        "freq_checkpoint":1
+    },
+    "dataset":{    
+        "name": "ycb_slide",    
+        "image_size": 64,
+        "channels": 3,
+        "batch_size": 32,
+        "remove_bg": true,
+        "test_ratio": 0.2
+    }
+}

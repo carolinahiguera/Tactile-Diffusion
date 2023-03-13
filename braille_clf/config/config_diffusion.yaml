@@ -1,0 +1,12 @@
+name_source_data: diffusion
+root_dir: /media/chiguera/2TB/tacto_diffusion/repo
+dir_bgs: datasets/braille/bgs/
+dir_tactile_imgs: datasets/braille/sim_diffusion/color_fg/
+dir_tactile_real: datasets/braille/real/color/
+remove_bg_train: false
+batch_size: 20
+img_size: 64
+lr: 0.0001
+model: resnet18
+n_froze_layers: 2
+n_epochs: 50
