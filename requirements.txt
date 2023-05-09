@@ -1,0 +1,13 @@
+digit-interface==0.2.1
+matplotlib @ file:///croot/matplotlib-suite_1679593461707/work
+numpy @ file:///croot/numpy_and_numpy_base_1672336185480/work
+numpy-quaternion==2021.10.7.23.40.37
+opencv-python==4.7.0.72
+pyrealsense2==2.49.0.3474
+tensorboard==2.11.0
+torch==2.0.0
+torch-tb-profiler==0.4.0
+torchaudio==2.0.0
+torchmetrics @ file:///home/conda/feedstock_root/build_artifacts/torchmetrics_1678720682204/work
+torchvision==0.15.0
+tqdm==4.65.0
